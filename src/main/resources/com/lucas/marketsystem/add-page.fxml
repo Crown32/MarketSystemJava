@@ -12,7 +12,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="279.0" style="-fx-background-color: #c6ffb3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucas.marketsystem.ProductController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="279.0" style="-fx-background-color: #c6ffb3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucas.marketsystem.controller.ProductController">
    <children>
       <Label layoutX="32.0" layoutY="14.0" text="ADICIONAR PRODUTO">
          <textFill>

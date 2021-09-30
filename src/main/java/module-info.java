@@ -9,4 +9,6 @@ module com.lucas.marketsystem {
     exports com.lucas.marketsystem;
     exports com.lucas.marketsystem.repository;
     opens com.lucas.marketsystem.repository to javafx.fxml;
+    exports com.lucas.marketsystem.controller;
+    opens com.lucas.marketsystem.controller to javafx.fxml;
 }

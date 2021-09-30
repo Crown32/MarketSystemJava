@@ -1,5 +1,6 @@
-package com.lucas.marketsystem;
+package com.lucas.marketsystem.controller;
 
+import com.lucas.marketsystem.Application;
 import com.lucas.marketsystem.model.ProductCategory;
 import com.lucas.marketsystem.model.ProductModel;
 import javafx.collections.FXCollections;

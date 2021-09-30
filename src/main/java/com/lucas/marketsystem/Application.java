@@ -1,5 +1,6 @@
 package com.lucas.marketsystem;
 
+import com.lucas.marketsystem.controller.ProductController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
