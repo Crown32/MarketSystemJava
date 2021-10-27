@@ -16,5 +16,5 @@ public class ProductModel {
     private Double preco_unidade;
     private BigInteger quantidade;
     private String categoria;
-    private String fornecedor;
+    private BigInteger cod_fornecedor;
 }

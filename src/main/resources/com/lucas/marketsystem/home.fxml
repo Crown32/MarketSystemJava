@@ -6,57 +6,59 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0" style="-fx-background-color: #c6ffb3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucas.marketsystem.controller.ProductController">
+<Pane fx:id="prodScrollFornecedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucas.marketsystem.controller.ProductController">
    <children>
-      <Label layoutX="179.0" layoutY="14.0" text="SUPERMERCADOS IONCO">
+      <Label layoutX="368.0" layoutY="14.0" text="SUPERMERCADOS IONCO">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
-         <textFill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.7607843279838562" blue="1.0" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="1.0" blue="0.30588236451148987" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
       </Label>
-      <Label layoutX="188.0" layoutY="44.0" text="Sistema de controle de estoque">
+      <Label layoutX="377.0" layoutY="44.0" text="Sistema de controle de estoque">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <ScrollPane fx:id="prodScroll" layoutX="104.0" layoutY="137.0" prefHeight="220.0" prefWidth="391.0">
+      <ScrollPane fx:id="prodScroll" layoutX="54.0" layoutY="150.0" prefHeight="220.0" prefWidth="391.0">
          <content>
             <Accordion fx:id="prodAccordion" />
          </content></ScrollPane>
-      <Label layoutX="226.0" layoutY="96.0" text="Produtos em estoque">
+      <Label layoutX="176.0" layoutY="114.0" text="Produtos em estoque">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
       </Label>
-      <Button layoutX="347.0" layoutY="373.0" mnemonicParsing="false" onMouseClicked="#loadAddProductPage" style="-fx-background-color: #42f563; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 14;" text="Adicionar produto">
+      <Button layoutX="296.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#loadAddProductPage" text="Adicionar produto">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="138.0" layoutY="373.0" mnemonicParsing="false" onMouseClicked="#loadProducts" style="-fx-background-color: #42f563; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 14;" text="(Re)Carregar produtos">
+      <Button layoutX="88.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#loadProducts" text="(Re)Carregar produtos">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ScrollPane layoutX="538.0" layoutY="148.0" prefHeight="220.0" prefWidth="391.0">
+         <content>
+            <Accordion fx:id="prodAccordionFornecedor" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="646.0" layoutY="114.0" text="Fornecedores disponíveis">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="757.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#loadAddFornecedorPage" text="Adicionar fornecedor">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="569.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#loadFornecedores" text="(Re)Carregar fornecedores">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="428.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#loadFornecedorProductsData" text="(Re)Carregar ambos" />
    </children>
 </Pane>
